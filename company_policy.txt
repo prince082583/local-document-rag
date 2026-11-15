@@ -1,0 +1,19 @@
+ACME Corporation - Global Security & Authentication Policy (v2.4)
+
+1. Purpose and Scope
+This document outlines the mandatory authentication, access control, and identity management rules for all employees, contractors, and automated services accessing ACME corporate assets and databases.
+
+2. Authentication Policy
+- Multi-Factor Authentication (MFA): All user and administrative access to internal services, email, cloud infrastructure, and databases requires mandatory Multi-Factor Authentication (MFA) using FIDO2 hardware keys or approved mobile authenticator applications. SMS-based 2FA is explicitly forbidden due to SIM-swapping vulnerabilities.
+- Password Standards: Passwords must be at least 16 characters in length and comprise uppercase letters, lowercase letters, numbers, and symbols. Passwords must not be reused across corporate and personal accounts.
+- Password Expiration: Master credentials must be rotated every 90 days. Reusing any of the last 10 passwords is blocked by directory services.
+- Account Lockout: System accounts are locked out automatically after 5 consecutive failed authentication attempts. A security alert is generated to the Security Operations Center (SOC).
+- Session Duration and Inactivity: Active web sessions and CLI credentials automatically expire after 15 minutes of inactivity, requiring re-authentication.
+
+3. Remote Access & Network Security
+- All remote access must originate from corporate-managed endpoints and pass through the corporate Zero-Trust Network Access (ZTNA) gateway.
+- Public Wi-Fi access requires active VPN tunneling at all times.
+- Split-tunneling is disabled on all corporate devices.
+
+4. Incident Reporting & Violations
+Any suspected credential compromise or unauthorized access attempt must be reported immediately to security@acmecorp.internal within 1 hour of discovery.
