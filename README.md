@@ -1,6 +1,14 @@
 # 🚀 Local Document RAG Assistant (ChatGPT UI + pgvector)
 
+[![Medium Article](https://img.shields.io/badge/Medium-Read_Architecture_Article-black?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@prince.jose26/how-i-built-a-100-private-enterprise-grade-document-rag-assistant-with-postgresql-pgvector-and-bed2a5f4f066)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](Dockerfile)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL_18-pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
+
 An enterprise-ready, 100% private **Retrieval-Augmented Generation (RAG)** assistant powered by local LLMs via **Ollama**, dense vector similarity search with **PostgreSQL + pgvector**, and an interactive **ChatGPT-style Web UI**.
+
+> 📖 **Read the full engineering deep-dive on Medium:**  
+> [How I Built a 100% Private, Enterprise-Grade Document RAG Assistant with PostgreSQL, pgvector, and Ollama](https://medium.com/@prince.jose26/how-i-built-a-100-private-enterprise-grade-document-rag-assistant-with-postgresql-pgvector-and-bed2a5f4f066)
 
 ---
 
